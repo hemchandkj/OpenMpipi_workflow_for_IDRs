@@ -6,18 +6,18 @@ This repository contains Python scripts for OpenMpipi implementation for intrins
 
 ## Repository structure
 
-- `test.py`  
+- `slab_formation.py`  
   Two-stage **direct-coexistence** OpenMM protocol using OpenMpipi:
   1. Build compact initial chains and tile multiple proteins on a 3D grid.  
   2. Compress the system via NPT to a target density.  
   3. Stretch the box along one axis to form a slab and run NVT production.  
 
-- `production_test.py`  
-  Continues an Mpipi-Recharged simulation from an equilibrated `final_model.pdb`
+- `energy_decomposition_nvt_runs.py`  
+  Continues an Mpipi-Recharged simulation from an equilibrated `equi_model.pdb`
   using OpenMM + CUDA (mixed precision), writing an `trajectory.xtc` and state
   outputs.
 
-- `Tc calculations.py`  
+- `critical_temperature.py`  
   Reads pre-computed coexistence densities from `.csv`, fits a binodal, and
   extracts the critical temperature **Tc** (and fit parameters) using
   non-linear least-squares. Optionally generates publication-quality plots.
