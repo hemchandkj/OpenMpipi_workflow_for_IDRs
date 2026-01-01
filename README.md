@@ -17,16 +17,16 @@ This repository contains Python scripts for OpenMpipi implementation for intrins
   using OpenMM + CUDA (mixed precision), writing an `trajectory.xtc` and state
   outputs.
 
-- `critical_temperature.py`  
-  Reads pre-computed coexistence densities from `.csv`, fits a binodal, and
-  extracts the critical temperature **Tc** (and fit parameters) using
-  non-linear least-squares. Optionally generates publication-quality plots.
-
 - `density_profiles.py`  
   Uses **MDTraj** to load `.xtc` trajectories and corresponding `.pdb` files,
   wraps and centres coordinates, and computes 1D density profiles along the
   slab axis (x) over multiple temperatures. Outputs profiles to `.csv` and
   plots.
+
+- `critical_temperature.py`  
+  Reads pre-computed coexistence densities from `.csv`, fits a binodal, and
+  extracts the critical temperature **Tc** (and fit parameters) using
+  non-linear least-squares. Optionally generates publication-quality plots.
 
 ---
 
