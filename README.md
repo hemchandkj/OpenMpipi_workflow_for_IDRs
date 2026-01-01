@@ -28,10 +28,6 @@ This repository contains Python scripts for OpenMpipi implementation for intrins
   slab axis (x) over multiple temperatures. Outputs profiles to `.csv` and
   plots.
 
-- `timesteps per second.py`  
-  Parses `state.out` timing files from GPU benchmarks (different system sizes),
-  computes timesteps per second, and plots performance scaling.
-
 ---
 
 ## Requirements
