@@ -38,7 +38,7 @@ box_scaling = 6                  # fallback x scaling for box if compression fai
 # --------- Protein parameters -----------
 seq = 'MASASSSQRGRSGSGNFGGGRGGGFGGNDNFGRGGNFSGRGGFGGSRGGGGYGGSGDGYNGFGNDGSNFGGGGSYNDFGNYNNQSSNFGPMKGGNFGGRSSGGSGGGGQYFAKPRNQGGYGGSSSSSSYGSGRRF'
 chainID = 'wtA1'
-Nprot =                       # 60/200 for DDX4/A1LCD # number of protein chains to place
+Nprot =   200                    # 60/200 for DDX4/A1LCD # number of protein chains to place
 
 # ------------------------------------------
 # HELPER FUNCTIONS (Protein Only)
