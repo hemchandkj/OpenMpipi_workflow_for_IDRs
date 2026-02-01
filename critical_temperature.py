@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# ---------- User-editable paths / settings ----------
+# ---------- User-editable paths / settings (these parameters are customisable for different IDR types) ----------
 csv_path = '/scratch/hc675/Analysis_dir/ddx4/TcTemps/Tctemps300ddx4wt.csv'
-set_lim = 280        # K, temperature threshold used in Tc fit
-z_dim =            # nm, slab interface side,  (used to normalize densities)
+set_lim =         # K, temperature threshold used in Tc fit
+z_dim =           # nm, slab interface side,  (used to normalize densities)
 point_size = 40
 fit_linesize = 2.3
 color = 'tab:green'
