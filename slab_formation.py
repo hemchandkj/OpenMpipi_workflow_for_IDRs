@@ -18,7 +18,7 @@ Protein-only version of the two-stage OpenMM simulation using OpenMpipi.
 """
 
 # ------------------------------------------
-# PARAMETERS
+# PARAMETERS (this section is mostly customisable accordingly to the type of protein variants)
 # ------------------------------------------
 
 min_separation = 2.0            # nm; minimum spacing between protein chains
@@ -28,7 +28,7 @@ sim_temp = 300                   # K
 sim_C = 150                      # mM NaCl
 compact_initial = True           # use compact initial chains
 compact_SimTime_prot = 30        # ns; compacting protein chains
-barostat_pressure = 2.5          # atm; initial barostat pressure
+barostat_pressure = 1.0          # atm; initial barostat pressure
 threshold_density = 0.6 * unit.gram / unit.centimeter**3  # target density for barostat run
 max_cycles = 0                   # additional barostat cycles
 cycle_length = 50                # ns per additional barostat cycle
@@ -38,7 +38,7 @@ box_scaling = 6                  # fallback x scaling for box if compression fai
 # --------- Protein parameters -----------
 seq = 'MASASSSQRGRSGSGNFGGGRGGGFGGNDNFGRGGNFSGRGGFGGSRGGGGYGGSGDGYNGFGNDGSNFGGGGSYNDFGNYNNQSSNFGPMKGGNFGGRSSGGSGGGGQYFAKPRNQGGYGGSSSSSSYGSGRRF'
 chainID = 'wtA1'
-Nprot = 63           # number of protein chains to place
+Nprot =                       # 60/200 for DDX4/A1LCD # number of protein chains to place
 
 # ------------------------------------------
 # HELPER FUNCTIONS (Protein Only)
