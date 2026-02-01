@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Paths to your trajectory and PDB files
-trajectory_files = [file paths]
-temperatures = [300, 310, 315, 320, 325]  # in Kelvin
+trajectory_files = [file paths] # for each temperature used
+temperatures = [300, 310, 315, 320, 325]  # in Kelvin 
 pdb_file = '/content/drive/MyDrive/Colab Files/wtA1/equi_model.pdb'
 
 def wrap_boundary(coords, box_length):
