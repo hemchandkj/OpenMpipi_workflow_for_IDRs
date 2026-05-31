@@ -30,7 +30,7 @@ for idx in range(system.getNumForces()):
     system.getForce(idx).setForceGroup(idx)
 
 # with the System ready, we can now prepare the Simulation object
-integrator = mm.LangevinMiddleIntegrator(T, 0.01/unit.picosecond, 10*unit.femtosecond)
+integrator = mm.LangevinMiddleIntegrator(T, 0.2/unit.picosecond, 10*unit.femtosecond) #tune friction coefficient as needed; 5 ps relaxation time is normal
 simulation = app.Simulation(topology, system, integrator, mm.Platform.getPlatformByName('CUDA'), {'Precision': 'Mixed'})
 
 # set positions and box vectors in the Context, minimize
